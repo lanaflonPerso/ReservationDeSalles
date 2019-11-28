@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.view.MainView">
+  <grid id="27dc6" binding="globalPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <font size="13"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="945c6" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="13"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="57d10" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Réservations"/>
+            </constraints>
+            <properties>
+              <font size="13"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <tabbedpane id="a0fba" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="200"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="13"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="47a4c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="5" left="5" bottom="5" right="5"/>
+                    <constraints>
+                      <tabbedpane title="Liste des salles"/>
+                    </constraints>
+                    <properties>
+                      <font size="13"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="4e715">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="811b9" class="javax.swing.JList" binding="listSalle">
+                            <constraints/>
+                            <properties>
+                              <font size="13"/>
+                              <model/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="ea6c8" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="5" left="5" bottom="5" right="5"/>
+                    <constraints>
+                      <tabbedpane title="Liste des réservations"/>
+                    </constraints>
+                    <properties>
+                      <font size="13"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="de8cb">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="53ac7" class="javax.swing.JTable" binding="tableReservations">
+                            <constraints/>
+                            <properties>
+                              <font size="13"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="cf2d0" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="5" left="5" bottom="5" right="5"/>
+                    <constraints>
+                      <tabbedpane title="Ajouter une réservation"/>
+                    </constraints>
+                    <properties>
+                      <font size="13"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="327b6" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Salle"/>
+                        </properties>
+                      </component>
+                      <component id="b57eb" class="javax.swing.JComboBox" binding="boxSalle">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="763ed" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Début réservation"/>
+                        </properties>
+                      </component>
+                      <component id="540a9" class="javax.swing.JComboBox" binding="boxJourDebut">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="328ac" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Fin réservation"/>
+                        </properties>
+                      </component>
+                      <component id="f80b1" class="javax.swing.JComboBox" binding="boxJourFin">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="84ea6" class="javax.swing.JComboBox" binding="boxHeureDebut">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="afff3" class="javax.swing.JComboBox" binding="boxHeureFin">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="5f372" class="javax.swing.JButton" binding="addReservation">
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Ajouter la réservation"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="57451" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="5" left="5" bottom="5" right="5"/>
+                    <constraints>
+                      <tabbedpane title="Supprimer une réservation"/>
+                    </constraints>
+                    <properties>
+                      <font size="13"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="f6887" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Réservation à supprimer"/>
+                        </properties>
+                      </component>
+                      <component id="4fd0f" class="javax.swing.JComboBox" binding="reservationBox">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                        </properties>
+                      </component>
+                      <component id="178ad" class="javax.swing.JButton" binding="deleteReservation">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="13"/>
+                          <text value="Supprimer la réservation"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
